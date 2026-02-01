@@ -322,3 +322,44 @@ function toggleImage(button) {
     button.classList.remove('active');
   }
 }
+
+// Copy email to clipboard functionality
+function copyEmailToClipboard(event, email) {
+  event.preventDefault();
+  
+  // Copy to clipboard
+  navigator.clipboard.writeText(email).then(() => {
+    // Create toast notification
+    const toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      Email copied to clipboard!
+    `;
+    document.body.appendChild(toast);
+    
+    // Trigger animation
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
+  }).catch(err => {
+    console.error('Failed to copy email:', err);
+    // Fallback: open mailto
+    window.location.href = `mailto:${email}`;
+  });
+}
+
+// Add click handlers to all email links on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+  emailLinks.forEach(link => {
+    const email = link.getAttribute('href').replace('mailto:', '');
+    link.addEventListener('click', (e) => copyEmailToClipboard(e, email));
+  });
+});

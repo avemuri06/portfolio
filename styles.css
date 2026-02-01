@@ -1513,3 +1513,43 @@ section {
   color: var(--text-light);
   font-style: italic;
 }
+
+/* Copy Email Toast Notification */
+.copy-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(34, 197, 94, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  z-index: 10000;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.copy-toast svg {
+  flex-shrink: 0;
+}
+
+/* Hover effect on email links */
+a[href^="mailto:"] {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+a[href^="mailto:"]:hover {
+  color: var(--primary-color) !important;
+}
