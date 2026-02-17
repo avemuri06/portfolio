@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // The Morris Guild of Psychotherapy
     { date: '2024-06', company: 'The Morris Guild of Psychotherapy', title: 'Digital Marketing Intern' },
-    { date: '2024-09', company: 'The Morris Guild of Psychotherapy', title: 'Marketing Consultant', type: 'promotion' },
+    { date: '2024-08', company: 'The Morris Guild of Psychotherapy', title: 'Marketing Consultant', type: 'promotion' },
 
     // UNC Impact Investing Club (progression)
     { date: '2024-09', company: 'UNC Impact Investing Club', title: 'Public Equities Research Analyst' },
