@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aditya Vemuri - Data Science and Analytics Portfolio">
+  <title>Aditya Vemuri
+ Data Science Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">Aditya Vemuri</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experiences</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Aditya Vemuri</span></h1>
+        <p class="hero-subtitle">Data Scientist 
+ Analytics Professional 
+ Business Intelligence Developer</p>
+        <p class="hero-description">
+          Dual degree student at UNC Chapel Hill pursuing Data Science and Information Science.
+          Passionate about transforming complex data into actionable insights through analytics, visualization, and strategic decision-making.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/avem06" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="/cdn-cgi/l/email-protection#48293e2d253d3a21083d262b662d2c3d" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a data-driven problem solver currently pursuing dual degrees in Data Science and Information Science at UNC Chapel Hill. With a 3.8 GPA and recognition on the Dean's List, I combine technical
+            expertise with business acumen to deliver impactful solutions.
+          </p>
+          <p>
+            My experience spans business intelligence, financial modeling, and digital analytics. I've worked with organizations
+            like PSEG (New Jersey's largest energy provider) and AllPeople Marketplace, where I've developed KPI tracking frameworks,
+            pricing strategies, and data-driven solutions that drive measurable results within the scope of the business.
+          </p>
+          <p>
+            As Head of Public Equities Research at UNC Impact Investing Club (managing $100K AUM), I lead analysis across multiple sectors
+            and mentor 20+ analysts in identifying investment opportunities that balance financial returns with social impact.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">2+ years</div>
+            <div class="stat-label">Professional analytics experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">$100K</div>
+            <div class="stat-label">AUM - Impact Investing</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Volunteer Hours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section (Horizontal Timeline) -->
+  <section id="experience" class="experience experience-horizontal">
+    <div class="container">
+      <h2 class="section-title">Experience Timeline</h2>
+      <p class="section-subtitle">Hover over to view experiences</p>
+
+      <!-- JS will render items into this container -->
+      <div class="timeline-h" id="timeline-h">
+        <div class="timeline-track"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Data analytics and business intelligence work across business development, marketing, and energy</p>
+      <div class="projects-grid">
+        <!-- Project 1: PSEG -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Warranty Pricing Strategy & Modeling</h3>
+            <div class="project-company">Public Service Enterprise Group (PSEG)</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Financial Modeling</span>
+            <span class="tag">KPI Analysis</span>
+          </div>
+          <p class="project-description">
+            Developed a comprehensive 3-tiered warranty pricing strategy for New Jersey's largest energy provider,
+            combining financial modeling with market research to optimize profit margins and capture revenue gaps across discount tiers.
+          </p>
+          <div class="project-results">
+            <h4>Contributions:</h4>
+            <ul>
+              <li>Created dynamic pricing tool that captured profit margins across varying customer segments</li>
+              <li>Modeled revenue gaps, required sales, and marketing efficiency based on varying discount tiers</li>
+              <li>Enabled data-driven optimization of business processes through advanced analytics</li>
+            </ul>
+          </div>
+          
+          <!-- Confidentiality Note -->
+          <div class="confidentiality-note">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <p><strong>Note:</strong> Actual data and tool screenshots are confidential. Slides from final presentation attached instead.</p>
+          </div>
+          
+          <!-- Presentation Slides with Individual Toggles -->
+          <div class="dashboard-section">
+            <h4 class="dashboard-section-title">Presentation Highlights:</h4>
+            
+            <!-- Slide 1: Summary of Findings -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Summary of Findings
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="pseg-slide1.png" alt="PSEG WorryFree Summary of Findings" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Slide 2: Project Overview -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Summer Project & Continuous Improvement
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="pseg-slide2.png" alt="PSEG Project Overview and Analysis" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Slide 3: Pricing Analysis -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Extended Labor Warranty Pricing
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="pseg-slide3-white.png" alt="PSEG Warranty Pricing Strategy" class="dashboard-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AdventureWorks PowerBI Dashboard -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">KPI Tracking & Analytics Dashboard</h3>
+            <div class="project-company">AdventureWorks (fictional business)</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Business Analytics</span>
+            <span class="tag">Data QA and Profiling</span>
+          </div>
+          <p class="project-description">
+            Developed an interactive executive-level Power BI dashboard using mock financial and sales data for AdventureWorks. 
+            Performed data cleaning, QA, and modeling to transform raw transactional data into actionable KPIs. 
+            Designed visuals to support performance monitoring, trend analysis, and revenue forecasting for executive decision-making.</p>
+          <div class="project-results">
+            <h4>Contributions:</h4>
+            <ul>
+              <li>Built a star-schema data model and performed data profiling to ensure metric accuracy and consistency</li>
+              <li>Created DAX measures for revenue, growth rates, and KPI target comparisons</li>
+              <li>Designed interactive slicers and filters to enable dynamic executive analysis</li>
+              <li>Visualized historical performance trends and projected sales outcomes to support strategic planning</li>
+            </ul>
+          </div>
+          
+          <!-- Dashboard Screenshots with Individual Toggles -->
+          <div class="dashboard-section">
+            <h4 class="dashboard-section-title">Dashboard Screenshots:</h4>
+            
+            <!-- Screenshot 1: Overview -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Revenue Overview & KPI Dashboard
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="dashboard-overview.png" alt="AdventureWorks Dashboard Overview - Revenue Trends and KPIs" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Screenshot 2: Map -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Geographic Sales Distribution
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="dashboard-map.png" alt="Geographic Sales Distribution Map" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Screenshot 3: Customers -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Customer Analysis & Segmentation
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="dashboard-customers.png" alt="Customer Analysis Dashboard - Segmentation and Top Customers" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Screenshot 4: Products -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Product Performance vs Targets
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="dashboard-products.png" alt="Product Performance Dashboard - Metrics vs Targets" class="dashboard-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Morris Guild -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Digital Marketing Analytics & SEO Optimization</h3>
+            <div class="project-company">The Morris Guild of Psychotherapy</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">SEO/CRO</span>
+            <span class="tag">Marketing Analytics</span>
+            <span class="tag">Wix Dashboard</span>
+          </div>
+          <p class="project-description">
+            Led comprehensive digital marketing transformation through data-driven SEO/CRO strategies, PPC campaign optimization,
+            and performance tracking. Utilized Wix analytics and other frameworks to monitor KPIs and guide strategic business decisions.
+          </p>
+          <div class="project-results">
+            <h4>Results:</h4>
+            <ul>
+              <li>7x increase in daily site views through optimized SEO strategies</li>
+              <li>5x increase in site sessions and user engagement</li>
+              <li>700+ daily ad impressions growth and 55x improvement in click-through rates</li>
+              <li>10x strategic increase in PPC ad spend with positive ROI</li>
+            </ul>
+          </div>
+          
+          <!-- Analytics Screenshots with Individual Toggles -->
+          <div class="dashboard-section">
+            <h4 class="dashboard-section-title">Analytics Screenshots:</h4>
+            
+            <!-- Screenshot 1: Page Views -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Page Views Over Time
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="morris-pageviews.png" alt="Morris Guild Page Views Analytics" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Screenshot 2: Site Sessions -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Site Sessions & Engagement
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="morris-sessions.png" alt="Morris Guild Site Sessions Analytics" class="dashboard-image">
+              </div>
+            </div>
+            
+            <!-- Screenshot 3: Traffic Sources -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Traffic by Category
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="morris-traffic.png" alt="Morris Guild Traffic Sources Analytics" class="dashboard-image">
+              </div>
+            </div>
+
+            <!-- Screenshot 4: SEO -->
+            <div class="dashboard-item">
+              <button class="dashboard-toggle-btn" onclick="toggleImage(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                Google Search Console - SEO/CRO 
+              </button>
+              <div class="dashboard-image-container" style="display: none;">
+                <img src="seo-cro.png" alt="Google Search Console" class="dashboard-image">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Research -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">U.S. Internet Growth Correlational Analysis</h3>
+            <div class="project-company">AP Research - Capstone Project</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">R</span>
+            <span class="tag">Statistical Analysis</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+          <p class="project-description">
+            Comprehensive research study analyzing relationships between U.S. Internet penetration and economic/technological
+            factors over a 30-year period (1990-2020). Performed multiple correlational analyses to evaluate the extent to
+            which various factors relate to Internet adoption.
+          </p>
+          <div class="project-results">
+            <h4>Research Methodology:</h4>
+            <ul>
+              <li>4 correlations between Internet usage and GDP, Income, Unemployment, Net Exports</li>
+              <li>3 correlational analyses of Internet usage vs. Apple, Microsoft, Oracle stock performance</li>
+              <li>Comparative analysis of 7 correlational coefficients to identify key growth drivers</li>
+              <li>30-year longitudinal data analysis with statistical significance testing</li>
+            </ul>
+          </div>
+          
+          <!-- Research Paper Download -->
+          <div class="research-download">
+            <a href="research-paper.pdf" class="pdf-download-btn" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <polyline points="9 15 12 18 15 15"></polyline>
+              </svg>
+              Download Full Research Paper (PDF)
+            </a>
+            <p class="paper-details">4,832 words | 40 pages | Published 2024</p>
+          </div>
+        </div>
+
+        <!-- Project 5: HealthBridge -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">HealthBridge Patient Portal</h3>
+            <div class="project-company">UNC INLS 718 - Healthcare Data Challenge</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">Healthcare Tech</span>
+          </div>
+          <p class="project-description">
+            Designed and developed a patient-centered healthcare portal to bridge communication gaps between patients, providers, 
+            social workers, and dietitians. The application addresses medication adherence challenges by delivering appointment 
+            reminders, resource referrals, and symptom check-ins through accessible text and voice interfaces.
+          </p>
+          <div class="project-results">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>Multi-role dashboard supporting patients, providers, social workers, and dietitians</li>
+              <li>Appointment scheduling and automated reminder system</li>
+              <li>Symptom tracking with AI-powered health recommendations</li>
+              <li>Resource library with personalized referrals and educational content</li>
+              <li>Accessible design with text-to-speech and voice input options</li>
+            </ul>
+          </div>
+          
+          <!-- Development Note -->
+          <div class="confidentiality-note" style="background: rgba(59, 130, 246, 0.1); border-left-color: var(--primary-color);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <p><strong>Note:</strong> This is an early-stage prototype developed for a class project. Core frameworks are functional, but full interactivity is still in development.</p>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://health-bridge-model.vercel.app/" target="_blank" class="project-link" style="background: var(--primary-color); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease;">
+              View Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">Technical expertise across data science, analytics, and business intelligence</p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            Data Analysis & Visualization
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Statistical Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Programming & Development
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">DAX</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+            Business & Finance
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">KPI Analysis</span>
+            <span class="skill-tag">Financial Modeling</span>
+            <span class="skill-tag">ROI Analysis</span>
+            <span class="skill-tag">Market Research</span>
+            <span class="skill-tag">Investment Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Marketing & Analytics
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SEO/CRO</span>
+            <span class="skill-tag">PPC Advertising</span>
+            <span class="skill-tag">Marketing Analytics</span>
+            <span class="skill-tag">Wix Dashboard</span>
+            <span class="skill-tag">Digital Strategy</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+              <polyline points="13 2 13 9 20 9"></polyline>
+            </svg>
+            Database & Systems
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Database Modeling</span>
+            <span class="skill-tag">SQL Queries</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Systems Analysis</span>
+            <span class="skill-tag">Data Management</span>
+            <span class="skill-tag">QGIS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            Tools & Platforms
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">A.I. Platforms</span>
+            <span class="skill-tag">Colab/Jupyter Notebooks</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">RStudio</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Microsoft Office Suite</span>
+                    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">Interested in data analytics, business intelligence, or just want to chat? Reach out!</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <h4>Email</h4>
+              <a href="/cdn-cgi/l/email-protection#650413000810170c25100b064b000110"><span class="__cf_email__" data-cfemail="a3c2d5c6ced6d1cae3d6cdc08dc6c7d6">[email&#160;protected]</span></a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/avem06" target="_blank">linkedin.com/in/avem06</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h4>Location</h4>
+              <p>Chapel Hill, NC / Parsippany, NJ</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+19737239170">(973) 723-9170</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <h3>Currently Open To:</h3>
+          <ul>
+            <li>Data Analytics Internships</li>
+            <li>Business Intelligence Projects</li>
+            <li>Research Collaborations</li>
+            <li>Consulting Opportunities</li>
+          </ul>
+          <p class="graduation-note">Expected Graduation: May 2027</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Aditya Vemuri. Built with HTML, CSS, and JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/avem06" target="_blank">LinkedIn</a>
+        <a href="/cdn-cgi/l/email-protection#58392e3d352d2a31182d363b763d3c2d">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
